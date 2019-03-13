@@ -27,6 +27,10 @@ nav {
       padding-top: 100px;
       padding-left: 0px;
       padding-right: 0px; } }
+  .content input, .content select {
+    border: 2px solid #321622 !important; }
+    .content input:focus, .content select:focus {
+      box-shadow: 0px 0px 0px 4px #321622 !important; }
   .content:before {
     content: '';
     position: absolute;
@@ -39,6 +43,7 @@ nav {
   .content .left-content {
     color: white; }
     .content .left-content h1 {
+      font-family: 'Oswald', sans-serif !important;
       font-weight: bold;
       font-size: 70px; }
     .content .left-content p {
@@ -88,7 +93,8 @@ nav {
     font-size: 25px;
     font-weight: bold; } }
 #about #border-cont {
-  border: 1px solid #d6ba1c;
+  background-color: #9A3B46;
+  box-shadow: 2px 0px 12px 4px #4c080f82;
   padding: 20px;
   margin: 5px;
   margin-bottom: 50px; }
