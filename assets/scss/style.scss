@@ -1,0 +1,199 @@
+body{
+    background: linear-gradient(#CE5157,#3A1426);
+    color: white;
+}
+.greyish{
+    background-color: #421029;
+}
+
+nav{
+    font-family: 'Raleway', sans-serif !important;
+    position: absolute !important;
+    top:0 !important;
+    z-index: -1;
+    transition: 0.3s ease;
+}
+.content{
+    width:100%;
+    min-height:500px;
+    background: url('../images/annie-spratt-608001-unsplash.jpg') center center no-repeat;
+    position: relative;
+    background-size: cover;
+    z-index: 1000;
+
+    &:before{
+        content: '';
+        position: absolute;
+        top:0;
+        left:0;
+        bottom:0;
+        right:0;
+        background-image: linear-gradient(to bottom right,#002f4b,#dc4225);
+        opacity: .6;
+        
+    }
+    .left-content{
+        color : white;
+        
+        h1{
+            font-weight: bold;
+            font-size: 55px;
+            
+        }
+        p{
+            font-size: 20px;
+            width: 300px;
+        }
+    }
+    .card-header{
+        background: rgba(66,16,41,.5) !important;
+        color :white !important;
+        font-size: 20px;
+    }
+    .header-card{
+        margin-top: 30px;
+        margin-bottom: 30px;
+        background: rgba(0, 0, 0, .7) !important;
+        color: white;
+    
+        input,select,option{
+            background: rgba(0, 0, 0, .7) !important; 
+            color: white;
+        }
+    }
+    .btn-custom{
+        background-color: #421029;
+        border: #553E4C;
+        box-shadow: 0 8px 0 4px #421029;
+    }
+    button{
+        background-color: #421029 !important;
+        color: white !important;
+        border: 1px solid #421029 !important;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+    button:focus{
+        box-shadow: 0px 0px 0px 0px #421029 !important;
+    }
+}
+#about {
+    .head{
+        border: none;
+        border-bottom: 1px solid #CE5159;
+        display: inline-block;
+        padding: 10px;
+    }
+    @media screen and (max-width: 800px) {
+        h1{
+            font-size: 25px;
+            font-weight: bold;
+        }
+    }
+    #border-cont{
+        border: 1px solid rgb(214, 186, 28);
+        padding: 20px;
+        margin:5px;
+        margin-bottom: 50px;
+
+        .no{
+            width: 20px;
+            height: 20px;
+            // padding: 10px;
+            border-radius: 50%;
+            background-color: #8C2C38;
+            color: white;
+        }
+    }
+}
+section#our_team{
+    background-color: white;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color : black;
+    h2{
+        color: black;
+        text-align: center;
+    }
+    .card{
+        padding: 30px;
+        img{
+            border-radius: 50%;
+        }
+    }
+
+}
+section.dev{
+    width:100%;
+    padding: 30px;
+    min-height: 500px;
+    .dev-words{
+        float: right;
+        height: 300px;
+        border:none;
+        border-right: 3px solid #3A434C;
+
+    }
+    .dev-bg{
+        min-height: 300px;
+        img{
+            width: 250px;
+            // height: 400px;
+        }
+    }
+}
+section.shape{
+    background:url('../images/charles-456501-unsplash.jpg');
+    width:100%;
+    min-height: 400px;
+    padding: 30px;
+}
+section#footer{
+    background-color: #000;
+    width:100%;
+    min-height: 500px;
+    border: none;
+        display: inline-block;
+        border-top: 2px solid #CC147F;
+
+    h1{ 
+        padding: 10px;
+    }
+    .where{
+        color: #CC147F;
+    }
+    p{
+        color: #999999;
+    }
+    i.fa{
+        margin-left: 10px;
+        font-size: 40px;
+        margin-bottom: 20px;
+        color: #4F4F4F;
+    }
+    button.footer-btn{
+        background-color: #CC147F !important;
+        border: none;
+        height: 50px;
+        cursor: pointer;
+        color: white;
+        width: 100px;
+    }
+    input{
+        width: 300px;
+        padding-left: 10px;
+        background: rgba(0, 0, 0, .7);
+        color: white;
+        height: 50px;
+        border: 1px solid #4F4F4F;
+
+    }
+    .p-number{
+        font-size: 30px;
+        color: #4F4F4F !important;
+    }
+    article{
+        color:#999999;
+    }
+}
