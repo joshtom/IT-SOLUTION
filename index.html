@@ -6,15 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="assets/bootstrap/dist/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-	<link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet"> 
-	<link href="https://fonts.googleapis.com/css?family=Montserrat|Raleway" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="assets/font-awesome-4.7.0/css/font-awesome.min.css">
 	<link rel="shortcut icon" href="images/tri_icon-02.png" type="image/x-icon">
 	
     <title>Document</title>
 </head>
 <body>
-    <nav class="navbar navbar-dark  navbar-expand-lg p-4" style="background-color: #421029; !important">
+    <nav class="navbar navbar-dark  navbar-expand-lg p-4" style="background-color: rgba(66,16,41,.6); !important;" id="mynav">
         <a class="navbar-brand" href="#">LOGO HERE</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -22,41 +21,42 @@
         <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
           <ul class="navbar-nav">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="javascript:void()">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item active">
-                <a class="nav-link" href="#">Join Us <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="javascript:void()">Join Us<span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item active">
-                <a class="nav-link" href="#">Contact Us <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="javascript:void()">About us<span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item active">
-                <a class="nav-link" href="#">About Us <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="javascript:void()">Contact us<span class="sr-only">(current)</span></a>
               </li>
+              <li class="nav-item active">
+                  <a class="nav-link" href="javascript:void()">Follow Us<span class="sr-only">(current)</span></a>
+                </li>
           </ul>
         </div>
       </nav>
       <div class="content">
           <div class="container">
             <div class="row">
-              <div class="col-lg-7 d-flex">
-               <div class="left-content my-auto">
+              <div class="col-lg-7 col-sm-12 d-flex">
+               <div class="left-content pt-5">
                  <h1>Accelerate your Career</h1>
-                 <p>There's a Lot of darkness out there and it is time for us to turn the bulbs on</p>
+               
                  <p>Want to leverage your skills to build global products while developing the next generation of African tech talent?
-
-                    Join us</p>
+                  <p> Start a Career for yourself today either in Frontend Development or Search Engine Optimization </p>
+                    <p>Join us <i class="fa fa-arrow-right"></i></p>
                </div>
               </div>
-              <div class="col-lg-5">
+              <div class="col-lg-5 col-sm-12">
                 <form action="">
                   <div class="card header-card">
                     <div class="card-header">
                       <p class="text-center text-white">WE WILL LIKE TO KNOW WHO YOU ARE</p>
                     </div>
                     <div class="card-body p-4">
-                      
-                        <div class="input-group">
                         <div class="form-group">
                           <label for="firstname">Firstname</label>
                           <input type="text" class="form-control " id="firstname" name="firstname" placeholder="Firstname" required>
@@ -77,18 +77,30 @@
                                   <option value="">Neutral</option>
                                 </select>
                               </div>
-                      </div>
+                    
                        
                         <div class="form-group">
                             <label for="how">How did you find out about this opportunity?</label>
                             <input type="text" class="form-control" id="how" name="how" placeholder="Let's know how you know about this program" required>
                           </div>
                           <div class="form-group">
-                              <label for="how">Choose your career</label>
+                              <label for="how">Field of work</label>
                               <select name="" id="" class="form-control" style="color: #999999;">
-                                <option value="">Please Specify</option>
-                                <option value="">Front End Development</option>
-                                <option value="">Search Engine Optimization</option>
+                                <option value="" disabled>Please Specify</option>
+                                <option value="">Software Engineer / Software Developer</option>
+                                <option value="">Technology Product Manager</option>
+                                <option value="">Data Scientist</option>
+                                <option value="">Technical Team Lead</option>
+                                <option value=""> Solutions Architect</option>
+                                <option value="">Technical Sales executive / Manager</option>
+                                <option value="">Digital Marketer</option>
+                                <option value="">Solutions Designer</option>
+                                <option value="">Product Designer</option>
+                                <option value="">Software Architect</option>
+                                <option value="">Technical Project Manager</option>
+                                <option value="">Student</option>
+                                <option value="">Unemployed</option>
+                                <option value="">Others</option>
                               </select>
                             </div>
                     <div class="form-group">
@@ -300,5 +312,8 @@
 <script type="text/javascript" src="assets/js/popper.min.js"></script>
 <script type="text/javascript" src="assets/bootstrap/dist/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="assets/sweetalert.min.js"></script>
+<script src="assets/js/typed.min.js"></script>
+<script type="text/javascript" src="assets/js/app.js"></script>
+
 </body>
 </html>

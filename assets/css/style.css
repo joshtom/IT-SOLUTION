@@ -1,4 +1,5 @@
 body {
+  font-family: "Abel", sans-serif !important;
   background: linear-gradient(#CE5157, #3A1426);
   color: white; }
 
@@ -6,19 +7,26 @@ body {
   background-color: #421029; }
 
 nav {
-  font-family: 'Raleway', sans-serif !important;
-  position: absolute !important;
+  font-family: "Abel", sans-serif !important;
+  position: fixed !important;
   top: 0 !important;
-  z-index: -1;
-  transition: 0.3s ease; }
+  width: 100%;
+  z-index: 1000;
+  transition: 0.3s ease;
+  padding: 10px 100px; }
 
 .content {
-  width: 100%;
+  min-width: 100%;
   min-height: 500px;
   background: url("../images/annie-spratt-608001-unsplash.jpg") center center no-repeat;
   position: relative;
   background-size: cover;
-  z-index: 1000; }
+  padding: 100px; }
+  @media screen and (max-width: 900px) {
+    .content {
+      padding-top: 100px;
+      padding-left: 0px;
+      padding-right: 0px; } }
   .content:before {
     content: '';
     position: absolute;
@@ -32,17 +40,26 @@ nav {
     color: white; }
     .content .left-content h1 {
       font-weight: bold;
-      font-size: 55px; }
+      font-size: 70px; }
     .content .left-content p {
-      font-size: 20px;
-      width: 300px; }
+      font-size: 30px;
+      width: 500px; }
+    .content .left-content .fa-arrow-right {
+      animation: move 1s ease-in-out infinite; }
+@keyframes move {
+  0% {
+    margin-left: 10px; }
+  50% {
+    margin-left: 0px; }
+  100% {
+    margin-right: 10px; } }
   .content .card-header {
     background: rgba(66, 16, 41, 0.5) !important;
     color: white !important;
     font-size: 20px; }
   .content .header-card {
     margin-top: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 0px;
     background: rgba(0, 0, 0, 0.7) !important;
     color: white; }
     .content .header-card input, .content .header-card select, .content .header-card option {
