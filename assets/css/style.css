@@ -7,13 +7,7 @@ body {
   background-color: #421029; }
 
 nav {
-  font-family: "Abel", sans-serif !important;
-  position: fixed !important;
-  top: 0 !important;
-  width: 100%;
-  z-index: 1000;
-  transition: 0.3s ease;
-  padding: 10px 100px; }
+  font-family: "Abel", sans-serif !important; }
 
 .content {
   min-width: 100%;
@@ -58,14 +52,16 @@ nav {
       font-size: 30px;
       width: 500px; }
     .content .left-content .fa-arrow-right {
-      animation: move 1s ease-in-out infinite; }
+      animation: move 1s forwards infinite;
+      width: 100px;
+      color: #B1454D; }
 @keyframes move {
   0% {
-    margin-left: 10px; }
-  50% {
     margin-left: 0px; }
+  50% {
+    margin-left: 20px; }
   100% {
-    margin-right: 10px; } }
+    margin-right: 0px; } }
   .content .card-header {
     background: rgba(66, 16, 41, 0.5) !important;
     color: white !important;
@@ -138,6 +134,12 @@ section.dev {
     min-height: 300px; }
     section.dev .dev-bg img {
       width: 250px; }
+
+section#contact-us {
+  background-image: linear-gradient(#421029, #802E1D);
+  height: 500px;
+  width: 100%;
+  padding: 20px; }
 
 section.shape {
   background: url("../images/charles-456501-unsplash.jpg");

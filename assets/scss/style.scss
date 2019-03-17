@@ -9,12 +9,12 @@ body{
 
 nav{
     font-family: 'Abel', sans-serif!important;
-    position: fixed !important;
-    top:0 !important;
-    width: 100%;
-    z-index: 1000;
-    transition: 0.3s ease;
-    padding: 10px 100px;
+    // position: fixed !important;
+    // top:0 !important;
+    // width: 100%;
+    // z-index: 1000;
+    // transition: 0.3s ease;
+    // padding: 10px 100px;
 
    
 }
@@ -80,17 +80,19 @@ nav{
             width: 500px;
         }
         .fa-arrow-right{
-            animation: move 1s ease-in-out infinite;
+            animation: move 1s forwards infinite;
+            width: 100px;
+            color: #B1454D;
         }
         @keyframes move{
             0%{
-                margin-left: 10px;
-            }
-            50%{
                 margin-left: 0px;
             }
+            50%{
+                margin-left: 20px;
+            }
             100%{
-                margin-right:10px;
+                margin-right:0px;
             }
         }
     }
@@ -128,6 +130,7 @@ nav{
     }
 }
 #about {
+    // padding: 100px 100px 0px 100px;
     .head{
         border: none;
         border-bottom: 1px solid #CE5159;
@@ -193,6 +196,12 @@ section.dev{
             // height: 400px;
         }
     }
+}
+section#contact-us{
+    background-image: linear-gradient(#421029,#802E1D);
+    height: 500px;
+    width:100%;
+    padding: 20px;
 }
 section.shape{
     background:url('../images/charles-456501-unsplash.jpg');
