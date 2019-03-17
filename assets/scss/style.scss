@@ -1,3 +1,4 @@
+
 body{
     font-family: 'Abel', sans-serif!important;
     background: linear-gradient(#CE5157,#3A1426);
@@ -141,8 +142,10 @@ nav{
         h1{
             font-size: 25px;
             font-weight: bold;
+            text-align: center !important;
         }
     }
+   
     #border-cont{
         // border: 1px solid rgb(214, 186, 28);
         background-color: #9A3B46;
@@ -150,7 +153,16 @@ nav{
         padding: 20px;
         margin:5px;
         margin-bottom: 50px;
+        text-align: justify;
 
+        img{
+            color: rgb(179, 173, 173) !important;
+        }h4{
+            font-weight: bolder;
+        }
+        p{
+            text-align: justify;
+        }
         .no{
             width: 20px;
             height: 20px;
@@ -166,18 +178,27 @@ section#our_team{
     padding-top: 30px;
     padding-bottom: 30px;
     color : black;
+    i{
+        margin-left: 10px;
+    }
     h2{
         color: black;
         text-align: center;
     }
     .card{
-        padding: 30px;
-        img{
-            border-radius: 50%;
+        padding: 10px;
+            border: 1px solid #8000801f !important;
+         box-shadow: inset -1px -3px 20px 0px #c73b77;
+
+         .btn-danger {
+            color: #fff;
+            background: linear-gradient(#bf39b5,#ff0052);
+            border-color: #9f25a714;
         }
+}        
     }
 
-}
+
 section.dev{
     width:100%;
     padding: 30px;
@@ -198,16 +219,42 @@ section.dev{
     }
 }
 section#contact-us{
-    background-image: linear-gradient(#421029,#802E1D);
-    height: 500px;
+    position: relative;
+    // background: url('../images/photo-1500160503851-c04cefe545a9.jpg') center center no-repeat;
+    background: #fff;
+    min-height: 500px;
     width:100%;
+    color: #000000;
     padding: 20px;
+    .container{
+        height:500px;
+    }
+    .head{
+        border: none;
+        border-bottom: 1px solid #CE5159;
+        display: inline-block;
+        padding: 10px;
+    }
+    p{
+        font-size: 20px;
+        text-align: justify;
+    }
+    .fa{
+        color: #af4d4d;
+        font-size: 25px;
+    }
+    .custom{
+        background: #fff;
+        box-shadow:0px 0px 0px 4px 0px rgba(66,16,41,.5);
+    }
+    
 }
 section.shape{
     background:url('../images/charles-456501-unsplash.jpg');
     width:100%;
     min-height: 400px;
     padding: 30px;
+    text-align: justify
 }
 section#footer{
     background-color: #000;
@@ -235,10 +282,11 @@ section#footer{
     button.footer-btn{
         background-color: #CC147F !important;
         border: none;
-        height: 50px;
+        min-height: 50px;
         cursor: pointer;
         color: white;
-        width: 100px;
+        min-width: 100px;
+        padding: 1em;
     }
     input{
         width: 300px;
@@ -248,6 +296,7 @@ section#footer{
         height: 50px;
         border: 1px solid #4F4F4F;
 
+        
     }
     .p-number{
         font-size: 30px;
@@ -257,4 +306,5 @@ section#footer{
         color:#999999;
     }
 }
+
 
